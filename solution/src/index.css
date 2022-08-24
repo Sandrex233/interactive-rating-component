@@ -15,5 +15,41 @@ body {
   font-family: "Overpass", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--very-dark-blue);
+  margin: 0 1.25rem;
+  height: calc(100vh - 0.1px);
+}
+
+.wrapper {
+  background: var(--dark-blue);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+.btn-rating {
+  background-color: var(--orange);
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-rating:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.btn-number:hover {
+  background-color: var(--orange);
+}
+
+.p-rating {
+  color: var(--orange);
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    width: 400px;
+  }
 }
